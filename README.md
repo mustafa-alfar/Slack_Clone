@@ -1,4 +1,12 @@
-Chat created usign React, Firebase and Typescript and bootstrapped with Create React App
+ Chat created usign React, Firebase and Typescript and bootstrapped with Create React App
+
+## To run the project locally:
+### 1. clone the app into your evniroment:
+ git clone https://github.com/mustafa-alfar/Chat.git
+
+### 2. install the dependencies 
+ npm install or npm i
+
 
 ## Available Scripts
 
@@ -15,8 +23,7 @@ You will also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
+hint: test is not yet implemented .
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br>
@@ -24,10 +31,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
 
 
 
