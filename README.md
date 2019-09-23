@@ -1,4 +1,4 @@
- Chat created usign React, Firebase and Typescript and bootstrapped with Create React App
+ Chat created usign React with Typescript and Firebase and  bootstrapped with Create React App
 
 ## To run the project locally:
 ### 1. clone the app into your evniroment:
