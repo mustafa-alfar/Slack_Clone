@@ -7,7 +7,7 @@ const UnAuthenticatedApp = lazy(() => import('./UnAuthenticatedApp'));
 const App = (): JSX.Element => {
   useEffect(() => {
     // pre-load the authenticated side in the background while the user's
-    // filling out the login form.
+    // filling out the login form..
     loadAuthenticatedApp();
   }, []);
 

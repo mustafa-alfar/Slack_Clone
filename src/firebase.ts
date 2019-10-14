@@ -25,7 +25,6 @@ interface User {
 }
 
 function setupPresence(user: any) {
-  console.log(user);
   const { uid } = user;
 
   const userStatusDatabaseRef = firebase.database().ref('/status/' + uid);

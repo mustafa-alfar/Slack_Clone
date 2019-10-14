@@ -3,6 +3,7 @@ import { db } from './firebase';
 import { useUser } from './context/user-context';
 import { useChannelId } from './Channel';
 import { FormEvent } from './types';
+import styled from '@emotion/styled';
 
 const ChatInputBox = (): JSX.Element => {
   const [message, setMessage] = React.useState('');
@@ -24,15 +25,33 @@ const ChatInputBox = (): JSX.Element => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="ChatInputBox">
+    <FormLayout onSubmit={handleSubmit}>
       <input
-        className="ChatInput"
         placeholder="Message #general"
         value={message}
         onChange={e => setMessage(e.target.value)}
       />
-    </form>
+    </FormLayout>
   );
 };
+
+const FormLayout = styled.form`
+  padding: 0px 20px 20px 20px;
+
+  input {
+    box-sizing: border-box;
+    font: inherit;
+    width: 100%;
+    padding: 8px;
+    border: solid 2px;
+    border-color: #aaa;
+    border-radius: 6px;
+    outline: none;
+
+    &:focus {
+      border-color: #666;
+    }
+  }
+`;
 
 export default ChatInputBox;

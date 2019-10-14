@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import styled from '@emotion/styled';
 import Members from './Members';
 import ChannelInfo from './ChannelInfo';
 import Messages from './Messages';
@@ -28,17 +29,30 @@ const Channel = ({ channelId = 'general' }: Channel): JSX.Element => {
   }, [channelId, user.uid]);
 
   return (
-    <div className="Channel">
+    <Channels>
       <Ctx.Provider value={channelId}>
-        <div className="ChannelMain">
+        <MainChannel>
           <ChannelInfo />
           <Messages />
           <ChatInputBox />
-        </div>
+        </MainChannel>
         <Members />
       </Ctx.Provider>
-    </div>
+    </Channels>
   );
 };
 
 export default Channel;
+
+const Channels = styled.div`
+  flex: 1;
+  flex-grow: 1;
+  display: flex;
+`;
+
+const MainChannel = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+`;

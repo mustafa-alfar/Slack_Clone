@@ -1,7 +1,7 @@
-import React, { useEffect, useState, useContext, Children } from 'react';
+import React, { useEffect, useState } from 'react';
 import { firebase, db, setupPresence } from '../firebase';
 import { createCtx } from './index';
-// import { User } from '../types';
+
 interface User {
   displayName: string;
   photoUrl: string;
